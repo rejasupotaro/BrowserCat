@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class LogDisplayPanel extends JPanel {
-    public static String DEFAULT_FILTER = "I/browser";
+    public static String DEFAULT_FILTER = "browser";
     private static int MAX_LOG_COUNT_SIZE = 50;
     
     private LinkedList<String> mLogList;
