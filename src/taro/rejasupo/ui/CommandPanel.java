@@ -1,8 +1,6 @@
 package taro.rejasupo.ui;
 
 import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.TextArea;
 import java.awt.TextField;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -13,9 +11,9 @@ import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class CommandPanel extends JPanel {
-    private static String DUMMY_PATH = "/fullpath/to/adb";
+    private static String DUMMY_PATH = "/path/to/adb";
     private static String EXECUTE_BUTTON_TEXT = "読み込み";
-    
+
     private TextField mAdbPathTextField;
 
     public CommandPanel(final CommandPanel.Callback callback) {
@@ -46,7 +44,7 @@ public class CommandPanel extends JPanel {
         add(mAdbPathTextField);
         add(executeButton);
     }
-    
+
     public void setAdbPath(String adbPath) {
         if (adbPath != null && adbPath != "") {
             mAdbPathTextField.setText(adbPath);
