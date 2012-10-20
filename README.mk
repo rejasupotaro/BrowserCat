@@ -1,2 +1,0 @@
-# BrowserCat
-作ったニャン
